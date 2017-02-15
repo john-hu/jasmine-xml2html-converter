@@ -32,7 +32,7 @@ How to use
           browserVersion = caps.caps_.version;
           return null;
         });
-        
+
         var HTMLReport = require('jasmine-xml2html-converter');
         reportPath += browserName;
 
@@ -49,9 +49,10 @@ How to use
 
 Test config object
 ----------------------------------
-* Defaults : testConfig = {} 
+* Defaults : testConfig = {}
 * To override reportTitle & outputPath of the output html file : testConfig = { reportTitle: 'Test Execution Report', outputPath: './test-out' }
 * To add data to the report summary of the output html file: testConfig = { Browser: IE }
+* To set the output file name: { outputFile: 'output-file-name.html' }
 
 Sample html report
 ----------------------------------
